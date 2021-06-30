@@ -5,8 +5,8 @@ MACRO=macros.sty
 MARKDOWN=md/*.md
 INPUTS=$(HEADER) $(MACRO) $(MARKDOWN)
 
-DOCX=vsj21-wakita.docx
-HTML=vsj21-wakita.html
+DOCX=vsj21-ota.docx
+HTML=vsj21-ota.html
 
 define pandoc
   pandoc \
