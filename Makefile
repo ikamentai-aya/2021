@@ -2,7 +2,7 @@ all: docx html
 
 HEADER=vsj21-header.md
 MACRO=macros.sty
-MARKDOWN=md/1-introduction.md md/2-relatedwork.md md/3-syuhou.md md/4-system.md
+MARKDOWN=md/0-format.md md/1-introduction.md md/2-relatedwork.md md/3-syuhou.md md/4-system.md
 INPUTS=$(HEADER) $(MACRO) $(MARKDOWN)
 
 DOCX=vsj21-ota.docx

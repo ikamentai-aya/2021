@@ -13,8 +13,28 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="etc/page.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -24,22 +44,153 @@
 <h1 class="title"><p>小説内の動的人物相関図を用いた読書の支援</p></h1>
 <p class="author">太田　彩 (東京工業大学），脇田　建（東京工業大学）</p>
 </header>
+<p>An Example of the Manuscript for<br />
+the Visualization Symposium Japan (Times New Roman 16pt)</p>
+<p>―Subtitle (Times New Roman 14pt)―</p>
+<p>Taro KASHIKA and Hanako JOHO</p>
+<h5 class="af1" id="abstract">ABSTRACT</h5>
+<p>This template is a guide to prepare manuscript for Visualization Symposium Japan. Here, please write the abstract serving as an index and as a summary of the present paper. It should be as long as approximately 150 words. ************************</p>
+<p>********《150語程度の英文ABSTRACT及び5語以下のKeywordsを記入してください．文字の大きさは10pt，字体はCentury，行間は１行分 (シングルスペース) です．》</p>
+<p>Keywords: Visualization, Digital image processing, **&lt;5語以下&gt;**, *****, *****</p>
+<h1 id="序-論">序　論</h1>
+<p>本原稿は，可視化情報シンポジウムの原稿テンプレートです．原稿執筆にはこのテンプレートをご使用ください．原稿サイズはA4版とし，ページ数は任意ですがファイルサイズは5MB以下としてください．ページ余白は，上25mm，左20mm，右20mm，下20mmとし，ヘッダーおよびフッダーは入れず，表題は3行目から始めてください．</p>
+<h1 id="文字及び改行">文字及び改行</h1>
+<h2 id="文字の大きさと改行">文字の大きさと改行</h2>
+<p>使用言語は日本語または英語とします．和文原稿の場合，題目，著者名，所属を和文で書き，続けて題目，著者名の英文名を記入してください．英文原稿の場合，題目，著者名の英文名を記入してください．なお，<u>和題・英題は講演申込時と同じであることが必要です</u> (異なる場合，プログラムや講演論文集の目次には講演申込時の題目が使用されます)．</p>
+<p>著者名は11pt，1行に36字以内で右寄せとし，これを越える場合は改行してください．本文は9ptの2段組みとし，片側25字×50行，段間は10mmを基準としてください．章間の行間は2行分 (ダブルスペース) とし，その中央に章名を10ptで記し，節間は行を空けないようにしてください．</p>
+<h2 id="字-体">字　体</h2>
+<p>題名，章・節名はゴシック体，本文は明朝体，英文題名，著者名はTimes New Roman, 本文中の英文はCenturyとします.参考文献<sup>1)</sup> は8ptで表記ください．</p>
+<ul>
+<li><p><em>強調</em></p></li>
+<li><p><strong>とても強調</strong></p></li>
+</ul>
+<h1 id="図-表">図　表</h1>
+<p>本文中の図表の表記には，下記Fig.1と Table 1のように，図表には通し番号をふり，図表番号はゴシック体，図表題はCenturyで書きます．キャプションは表の場合は上部に，図の場合は下部に記し，説明文は英文で表記してください．</p>
+<table>
+<caption>Table 1: Sample of table</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Table</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<p>表 [Sample of table] を参照のこと。</p>
+<figure>
+<img src="md/pvis-party.jpg" alt="Figure 1: PacificVis PC meeting" /><figcaption aria-hidden="true">Figure 1: PacificVis PC meeting</figcaption>
+</figure>
+<h1 id="原稿提出">原稿提出</h1>
+<p>本テンプレートで作成した講演原稿 (PDF形式) と，調査票 (PDF形式，必ず押印したものをお願いします) をシンポジウムHPの案内に従って提出して下さい．</p>
+<h1 id="数式">数式</h1>
+<p>二点<span class="math inline">\(\mathbf p, \mathbf {p&#39;}\)</span>を結ぶふたつの制御点列<span class="math inline">\(\mathbb{e}\)</span>と<span class="math inline">\(\mathbb {e&#39;}\)</span>について。。。</p>
+<p><code>macros.tex</code> に定義したようなTeXマクロにも対応しています。</p>
+<p>二点<span class="math inline">\(\mathbf{p}, \mathbf{{p&#39;}}\)</span>を結ぶふたつの制御点列<span class="math inline">\(\mathbb{e}\)</span>と<span class="math inline">\(\mathbb{{e&#39;}}\)</span>について。。。</p>
+<p>以上で定義した三つの指標がいずれも一定値以上出会った場合に限り，束化圧があるものと評価する．このことは閾値 (<span class="math inline">\(\theta_a, \theta_l, \theta_p\)</span>) を用いて以下のように定式化される：</p>
+<p><span class="math inline">\(C_a(\mathbb{e}, \mathbb{{e&#39;}}), C_a(\mathbb{e}, \mathbb{{e&#39;}}), C_l(\mathbb{e}, \mathbb{{e&#39;}})\)</span></p>
+<p><span class="math display">\[
+C(\mathbb{e}, \mathbb{{e&#39;}}) =
+\begin {cases}
+C_a(\mathbb{e}, \mathbb{{e&#39;}})C_p(\mathbb{e}, \mathbb{{e&#39;}})C_l(\mathbb{e}, \mathbb{{e&#39;}})&amp; C_a(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_a \text { かつ } \\
+               &amp; C_p(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_p \text { かつ } \\
+               &amp; C_l(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_l \\
+0              &amp; \text {その他の場合}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[\begin {align}
+F_{\mathbf{e}_i} =
+  &amp; - \sum_{\mathbf{e}&#39;_i \neq \mathbf{e}_i} C(P^{-1}\mathbb{e}_i, P^{-1}\mathbb{e}&#39;_i)\frac{\mathbf{e}_i- \mathbf{e&#39;}_i}{(|\mathbf{e}_i-\mathbf{e}&#39;_i| + \alpha)^2} \\
+  &amp; -k\left(|{\mathbf{e}_i} - \mathbf{e}_{i-1}| - \ell_{\mathbb{e}}\right)\frac{\mathbf{e}_i - \mathbf{e}_{i-1}}{|\mathbf{e}_i - \mathbf{e}_{i-1}|} \\
+  &amp; -k\left(|\mathbf{e}_i - \mathbf{e}_{i+1}| - \ell_{\mathbb{e}}\right)\frac{\mathbf{e}_i - \mathbf{e}_{i+1}}{|\mathbf{e}_i - \mathbf{e}_{i+1}|}
+\end {align}
+\]</span></p>
+<p><span class="math display">\[\begin {align}
+C^{\text {High}}(\mathbb{x}, \mathbb{x&#39;}) &amp; = \\
+&amp; \begin {cases}
+C_a(\mathbb{x}, \mathbb{{e&#39;}})C_l(\mathbb{x}, \mathbb{{e&#39;}})C_p(\mathbb{x}, \mathbb{{e&#39;}})&amp; \text {※ 束化圧が高い場合} \\
+0 &amp; \text {その他の場合}
+\end {cases} \\
+\text {ただし、※の条件は} \\
+    C_a(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_a \text { \&amp; }
+    C_l(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_l \text { \&amp; }
+    C_p(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_p
+\end {align}\]</span></p>
+<h1 id="その他">その他</h1>
+<h2 id="文献の引用">文献の引用</h2>
+<p>この例題では、<code>library.bib</code> 文献データベースとし、文献引用のスタイルにシカゴスタイルを指定して文献リストと文献の引用をしている。<code>.csl</code>ファイルを別のものに指定すれば、他の引用形式にも対応できる。文献の引用方法は LaTeX の <code>\cite {...}</code> コマンドとは異なる。以下を参考にすること。</p>
+<p><span class="citation" data-cites="kashika-1997-visualization-technique kashika-1999-an-example-of-the-manuscript-for-vsj-journal">(Kashika 1997; Kashika and Hanko 1999)</span> は英語の文献で<span class="citation" data-cites="kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal">(可視化 and 情報 1998)</span>は日本語の文献である.</p>
 <h1 id="はじめに">はじめに</h1>
-<h1 id="関連研究">関連研究</h1>
+<h1 id="関連研究書きおわり">関連研究(書きおわり)</h1>
 <h2 id="小説からの情報抽出">小説からの情報抽出</h2>
-<p>小説の内容を理解する上で登場人物の名前と人物間の関係は大切な要素である。そのため以前から小説からそれらの情報を抽出するための研究がなされてきた。米田[?]では人物候補の局所出現性と述情報を利用し、小説の本文から登場人物を自動抽出した。西原[?]は人物関係を表す語を集めた関係辞書と、人物間の関係を抽出する関係抽出のパターンの集合を作成し、人物間の関係を抽出した。しかし自然言語処理の技術だけを用いて正確な情報を抽出することは難しく、読者によって必要とする情報の範囲は異なる。そこで本研究では計算機による情報抽出に加えて、人間の手により情報の追加・修正を可能にすることにより、読書に有用な情報の提示を実現する。</p>
+<p>小説の内容を理解する上で登場人物の名前と人物間の関係は大切な要素である。そのため以前から小説からそれらの情報を抽出するための研究がなされてきた。米田<span class="citation" data-cites="米田崇明2012述語情報を利用した小説の登場人物の抽出">(米田崇明 et al. 2012)</span>では人物候補の局所出現性と述情報を利用し、小説の本文から登場人物を自動抽出した。西原<span class="citation" data-cites="西原弘真2015物語テキストを対象とした登場人物の関係抽出">(西原弘真 and 白井清昭 2015)</span>は人物関係を表す語を集めた関係辞書と、人物間の関係を抽出する関係抽出のパターンの集合を作成し、人物間の関係を抽出した。しかし自然言語処理の技術だけを用いて正確な情報を抽出することは難しく、読者によって必要とする情報の範囲は異なる。そこで本研究では計算機による情報抽出に加えて、人間の手により情報の追加・修正を可能にすることにより、読書に有用な情報の提示を実現する。</p>
 <h2 id="物語の内容の可視化">物語の内容の可視化</h2>
-<p>物語の内容を一眼で理解したい、関係を図を用いて整理したいという願望は度々生じる。そのためテレビ番組や映画の内容を一枚の絵で表す研究は今までにも行われてきた。FCK[?]はテレビ番組「Game of Thrones」の中の84人の登場人物と216個の関係を放射状に配置することで一枚の絵で表した。THM[?]は時系列に沿って変わる映画内の登場人物の位置関係を複数の曲線を用いて表すアルゴリズムを提案した。以上の研究では物語の内容を一枚の絵で表しているが、本研究では読書の支援が目的であるため読み進めた時点までの関係を表示するインタラクティブな可視化を提案する。</p>
+<p>物語の内容を一眼で理解したい、関係を図を用いて整理したいという願望は度々生じる。そのためテレビ番組や映画の内容を一枚の絵で表す研究は今までにも行われてきた。FCK<span class="citation" data-cites="filipovcircle">(Filipov et al., n.d.)</span>はテレビ番組「Game of Thrones」の中の84人の登場人物と216個の関係を放射状に配置することで一枚の絵で表した。THM<span class="citation" data-cites="tanahashi2015efficient">(Tanahashi, Hsueh, and Ma 2015)</span>は時系列に沿って変わる映画内の登場人物の位置関係を複数の曲線を用いて表すアルゴリズムを提案した。以上の研究では物語の内容を一枚の絵で表しているが、本研究では読書の支援が目的であるため読み進めた時点までの関係を表示するインタラクティブな可視化を提案する。</p>
 <h2 id="文章に関する可視化">文章に関する可視化</h2>
-<p>テキストに付随する情報をテキストに関連づけて表示する研究は行われてきた。WZA[?]では音声の長さや音声認識の信頼度などの情報をテキストに関連づけて可視化をし音声認識のサポートを行った。IBS[?]は文学者向けに登場人物の関係性の分析を可視化でサポートするシステムを提案した。本研究ではこれらの論文で採用されているいくつかの可視化手法を参考にしシステム設計を行う。</p>
-<h1 id="提案手法">3.提案手法</h1>
-<h2 id="目的">目的</h2>
-<h3 id="読書の手間の分析">読書の手間の分析</h3>
+<p>テキストに付随する情報をテキストに関連づけて表示する研究は行われてきた。WZA<span class="citation" data-cites="wu2020interactive">(Wu, Zhao, and Amiruzzaman 2020)</span>では音声の長さや音声認識の信頼度などの情報をテキストに関連づけて可視化をし音声認識のサポートを行った。IBS<span class="citation" data-cites="8781589">(John et al. 2019)</span>は文学者向けに登場人物の関係性の分析を可視化でサポートするシステムを提案した。本研究ではこれらの論文で採用されているいくつかの可視化手法を参考にしシステム設計を行う。</p>
+<h1 id="提案手法一旦書きおわり">提案手法（一旦書きおわり）</h1>
+<!--ユースケースを書いた方がいいのか？人物相関図に着想をえたヒントがない？-->
+<p>読書をする際に読む意欲や必要性があっても、「登場人物が多すぎて覚えきれない」や「前回読んだ場所までの内容を忘れてしまった」などの理由から、読書を断念してしまうことがある。本研究ではこれらの読書の意欲を下げる要因を<strong>読書の手間</strong>と名付ける。読書の手間とは具体的には以下のような例が挙げられる。</p>
+<ul>
+<li>前回読書をした時から時間が経ち内容を忘れてしまったので、また読み直す必要がある</li>
+<li>ずっと前に読んだ本の内容が思い出せない</li>
+<li>登場人物が多い/名前が複雑で覚えられrない</li>
+<li>登場人物間の関係が覚えきれない/どこで出てきた関係なのか忘れてしまった</li>
+</ul>
+<p>これらの大半は記憶力を補助することで解決できると考え、本研究では小説の内容を可視化することで読書を支援することを決めた。</p>
+<h2 id="実験">実験</h2>
+<p>人物相関図を用いて読書を支援する手法を考える上で、実際に手書きで人物相関図を書きながら読書を行った。<!--ここに図を入れる-->その際に３つの問題を発見することができた。1点目は<strong>一枚の絵で表すと重大なネタバレを生じてしまう</strong>という問題である。人物相関図に物語内の登場人物や人間関係を表示すると、物語内の展開上重要な情報を事前に知ってしまう可能性がある。そのため読書をしたときの驚きや感動などの新鮮な感情が阻害され、読書の楽しみを減らす恐れがある。2点目に<strong>人間関係の描写は複雑なものが多い</strong>ということである。 小説には<strong>親子</strong>や<strong>恋人</strong>など単語で言い表せる関係もあれば、<strong>〇〇さんの好きな人だと気づく</strong>など簡潔に言い表せないものも存在する。文学において繊細な感情の変化は重要な要素なので詳細な関係を記述し、それを人物相関図にて確認できなければならない。3点目は<strong>手書きで美しいレイアウトの人物相関図を描くことは難しいということ</strong>である。登場人物や人間関係の数が多い場合、それらを線の交差や婉曲が少なくなるようにレイアウトすることには非常に手間がかかる。加えて読書を進めながら人物相関図を書くと、読みやすい人物相関図を書くことのハードルは跳ね上がる。そのため読書の度に人間の手でレイアウトを行うことは現実的でない。以上の考察により提案手法の果たすべき小目標を以下のように設定した。</p>
+<ul>
+<li>(P1) 小説のどの部分を読んでいても、人物相関図によってネタバレを起こさないこと</li>
+<li>(P2) 小説内の繊細な人間関係を記載し、ユーザーがそれを確認できること</li>
+<li>(P3) 入力した情報をもとに人物相関図を自動でレイアウトしてくれること</li>
+</ul>
 <h2 id="提案手法の概要">提案手法の概要</h2>
-<h2 id="section"></h2>
-<h1 id="システムの構成">4 システムの構成</h1>
+<p>3.1で設定した小目標をもとに提案手法の概要を紹介する。 (P1)の実現のために本研究では<strong>読書の進捗状況に応じて変化する人物相関図</strong>を提案する。小説内の登場人物と人間関係を動的ネットワークとして扱うために、登場人物や関係の出てきた位置をページ数で管理する。そして今まで読んできた中に登場した人物・関係のみを人物相関図に表示することでネタバレのない可視化を実現する。(P2)の実現のために登場人物と人間関係の情報追加を手動と自動の２通りで実現した。自動抽出では独自のアルゴリズムにより登場人物を表す可能性の高い単語を抽出し、登場人物の共出現した文を関係として抽出した。手動での追加では登場人物と人間関係に関する様々な情報をユーザーの手によって登録する。(P3)の実現のために人物相関図の自動レイアウトを行った。レイアウトに必要な情報は現在までのページに出てきた登場人物と関係のリストである。それらの情報をもとに<strong>人物相関図</strong>と<strong>人物相関表</strong>という２種類の表示を行う。人物相関表はノードリンクを用いたグラフで、各ノードは登場人物を表し各リンクは人間関係を表している。人物相関表は隣接行列を用いたグラフで、登場人物は縦と横の軸に並んでいる。関係は有向であると考え、関係の元の人物と行かつ関係の先の人物の列であるセルを着色することで表現する。以上が提案手法の概要である。次の章では手法をもとにシステムの設計を行う。</p>
+<h1 id="システムの構成">システムの構成</h1>
 <h2 id="システムの要件">システムの要件</h2>
-<p>以下のようなユースケースを設定した。 大学生の楓さんは友人の紅葉さんから勧められてイワン・ツルゲーネフの「はつ恋」を読むことにした。楓さんは普段小説を読まないため中々本を読み進めることができない。そこで補助のためにこのシステムを使うことにした。 最初に青空文庫のサイトで「はつ恋」のページを開き、テキストのURLをコピーし、システム上で「はつ恋」を読めるようにした。 楓さんは読み進めると</p>
 <h3 id="ユースケース">ユースケース</h3>
+<p>以下のようなユースケースを設定した。</p>
+<p>大学生の楓さんは友人の紅葉さんから勧められてイワン ツルゲーネフの「はつ恋」を読むことにした。彼女は読書 まず、青空文庫のサイトで「はつ恋」の図書カードを開く。そしてそこからテキストのリ ンクをコピーして、システムに貼り付けて、システム上で「はつ恋」を読めるようにする。 システムで小説の選択からダウンロード済みを選んで、「はつ恋」をシステム上に表示する。 楓さんは読み進めると 1 ページ目で3人のおじいさんが 出てくることに気づく。主人とセ ルゲイ・ニコラーエヴィチと、ヴラジーミル・ペトローヴィチの3人で、それらの人物を登 場人物に追加したい。そこで登場人物の候補を抽出ボタンを押すことで候補を出した。候補 には「イヴァーノヴナ」「客」「お嬢さん」など様々な候補が出されたので、ハイライトされ た部分を確認しながら人物を絞って追加した。 この調子で気になるところで人物候補の抽出を行っていく。5 ページ目に「背の高い少女」が出てきたのでその人物を追加する。この時、入れたい人物は一人だけだったので情報追 加で登場人物追加を選び入力した。また、それと同時に小説内で関係だと思うものを情報追 加から関係性追加を選んで追加していく。例えばウラジーミル・ペトローヴィチは6ページ 目で背の高い少女と知り合いになりたいと思っているのでその情報を足していく。その後 12 ページめでその少女の名前が「ジナイーダ」であることが明かされたので、可視化の選択か ら編集画面を選ぶ。選ぶと登場人物の表が出てくるので該当箇所を修正して変更を保存ボタ ンを押した。 その後も読み進めて 22 ページでジナイーダの取り巻きであるマレーフスキイ、ルーシン、 マイダーノフ、ニルマーツキイ、ベロヴゾーロフが登場したのでそれらの人物も追加した。 そこで楓さんはロシア人の名前がたくさん出てきて読むのに疲れたためいったん読むのをや めた。 楓さんは 1 週間開けてまた途中から読み直すことにした。しかし、1 週間期間を開けてし まったので、小説の中で誰が重要人物か思い出せなくなってしまった。そこでシステムにお いて人物相関図を表示して、内容を思い出すことにした。22 ページにおける人物相関図を見 ると、「ウラジーミル・ペトローヴィチ」と「ジナイーダ」が大きな頂点として描かれていた ので主要な人物が誰か確認できた。(図 5.1) 読み進めていくうちに「ルーシン」という人物が出てきた。「ジナイーダ」の取り巻きで あることは覚えているが、実際に誰なのかはわからない。そこで編集画面で登場人物表の 「ルーシン」をクリックしてどのくらいの頻度で確認しているかを確認した。 友人の紅葉さんにそのシステムを使っていることを話すと、紅葉さんは小説の考察をすることが好きなので、自分もそのシステムで自分の考察をまとめてみることにした。1 週間後 に楓さんが読み終えて、紅葉さんも考察が終わったので、二人で感想を言い合うことにした。 二人で入力した内容を見ている時に、楓さんは 51 ページの「ジナイーダがウラジーミルに塀 から降りるようにいった」ところの捉え方が異なっていることに気づいた。楓さんはこの関 係の好感度が低いと思ったが、紅葉さんは「ジナイーダは本当に飛び降りて欲しいとは思っていない」からだと好感度を高めに設定していた。自分の読んだ内容を思い出しながら会話を楽しむことができた。</p>
+<h3 id="システムの要件設定">システムの要件設定</h3>
+<p>ユースケースの内容からシステムの要件を以下のように定義した。</p>
+<p>(N1) システムの上で読書ができること</p>
+<p>(N2) 小説に関する重要な情報を手軽に追加できること</p>
+<p>(N3) 情報を後から編集できること</p>
+<p>(N4) 小説の進行度に合わせて関係図を表示すること</p>
+<h2 class="unnumbered" id="登場人物の抽出">登場人物の抽出</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-filipovcircle" class="csl-entry" role="doc-biblioentry">
+Filipov, Velitchko, Davide Ceneda, TU CVAST, Michael Koller, Alessio Arleo, and Silvia Miksch. n.d. <span>“The Circle of Thrones: Conveying the Story of Game of Thrones Using Radial Infographics.”</span>
+</div>
+<div id="ref-8781589" class="csl-entry" role="doc-biblioentry">
+John, Markus, Martin Baumann, David Schuetz, Steffen Koch, and Thomas Ertl. 2019. <span>“A Visual Approach for the Comparative Analysis of Character Networks in Narrative Texts.”</span> In <em>2019 IEEE Pacific Visualization Symposium (PacificVis)</em>, 247–56. <a href="https://doi.org/10.1109/PacificVis.2019.00037">https://doi.org/10.1109/PacificVis.2019.00037</a>.
+</div>
+<div id="ref-kashika-1997-visualization-technique" class="csl-entry" role="doc-biblioentry">
+Kashika, T. 1997. <span>“Visualization Technique.”</span> <em>VSJ Press</em>, 1111–25.
+</div>
+<div id="ref-kashika-1999-an-example-of-the-manuscript-for-vsj-journal" class="csl-entry" role="doc-biblioentry">
+Kashika, T., and J. Hanko. 1999. <span>“An Example of the Manuscript for <span>VSJ</span> Journal.”</span> <em><span>VSJ</span> Journal</em> 10 (5): 10–15.
+</div>
+<div id="ref-tanahashi2015efficient" class="csl-entry" role="doc-biblioentry">
+Tanahashi, Yuzuru, Chien-Hsin Hsueh, and Kwan-Liu Ma. 2015. <span>“An Efficient Framework for Generating Storyline Visualizations from Streaming Data.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 21 (6): 730–42.
+</div>
+<div id="ref-wu2020interactive" class="csl-entry" role="doc-biblioentry">
+Wu, Tsung Heng, Ye Zhao, and Md Amiruzzaman. 2020. <span>“Interactive Visualization of AI-Based Speech Recognition Texts.”</span> <em>EuroVA</em>.
+</div>
+<div id="ref-kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal" class="csl-entry" role="doc-biblioentry">
+可視化太郎, and 情報花子. 1998. <span>“可視化情報学会における論文の書き方.”</span> <em>可視化情報</em> 100 (1000): 11–12.
+</div>
+<div id="ref-米田崇明2012述語情報を利用した小説の登場人物の抽出" class="csl-entry" role="doc-biblioentry">
+米田崇明, 篠崎隆宏, 堀内靖雄, and 黒岩眞吾. 2012. <span>“述語情報を利用した小説の登場人物の抽出.”</span> <em>言語処理学会第 18 回年次大会発表論文集</em> 18: 855–58.
+</div>
+<div id="ref-西原弘真2015物語テキストを対象とした登場人物の関係抽出" class="csl-entry" role="doc-biblioentry">
+西原弘真, and 白井清昭. 2015. <span>“物語テキストを対象とした登場人物の関係抽出.”</span> <em>言語処理学会第 21 回年次大会発表論文集</em> 21: 628–31.
+</div>
+</div>
 </body>
 </html>
