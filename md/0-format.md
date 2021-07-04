@@ -18,6 +18,8 @@ as a summary of the present paper. It should be as long as approximately
 Keywords: Visualization, Digital image processing,
 \*\*\<5語以下\>\*\*, \*\*\*\*\*, \*\*\*\*\*
 
+<!--
+
 # 序　論
 
 本原稿は，可視化情報シンポジウムの原稿テンプレートです．原稿執筆にはこのテンプレートをご使用ください．原稿サイズはA4版とし，ページ数は任意ですがファイルサイズは5MB以下としてください．ページ余白は，上25mm，左20mm，右20mm，下20mmとし，ヘッダーおよびフッダーは入れず，表題は3行目から始めてください．
@@ -113,3 +115,4 @@ C^{\text {High}}(\E x, \E {x'}) & = \\
 
 
 [@kashika-1997-visualization-technique; @kashika-1999-an-example-of-the-manuscript-for-vsj-journal] は英語の文献で[@kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal]は日本語の文献である.
+-->

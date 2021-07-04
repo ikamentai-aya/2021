@@ -34,7 +34,6 @@
     }
   </style>
   <link rel="stylesheet" href="etc/page.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -52,78 +51,104 @@ the Visualization Symposium Japan (Times New Roman 16pt)</p>
 <p>This template is a guide to prepare manuscript for Visualization Symposium Japan. Here, please write the abstract serving as an index and as a summary of the present paper. It should be as long as approximately 150 words. ************************</p>
 <p>********《150語程度の英文ABSTRACT及び5語以下のKeywordsを記入してください．文字の大きさは10pt，字体はCentury，行間は１行分 (シングルスペース) です．》</p>
 <p>Keywords: Visualization, Digital image processing, **&lt;5語以下&gt;**, *****, *****</p>
-<h1 id="序-論">序　論</h1>
-<p>本原稿は，可視化情報シンポジウムの原稿テンプレートです．原稿執筆にはこのテンプレートをご使用ください．原稿サイズはA4版とし，ページ数は任意ですがファイルサイズは5MB以下としてください．ページ余白は，上25mm，左20mm，右20mm，下20mmとし，ヘッダーおよびフッダーは入れず，表題は3行目から始めてください．</p>
-<h1 id="文字及び改行">文字及び改行</h1>
-<h2 id="文字の大きさと改行">文字の大きさと改行</h2>
-<p>使用言語は日本語または英語とします．和文原稿の場合，題目，著者名，所属を和文で書き，続けて題目，著者名の英文名を記入してください．英文原稿の場合，題目，著者名の英文名を記入してください．なお，<u>和題・英題は講演申込時と同じであることが必要です</u> (異なる場合，プログラムや講演論文集の目次には講演申込時の題目が使用されます)．</p>
-<p>著者名は11pt，1行に36字以内で右寄せとし，これを越える場合は改行してください．本文は9ptの2段組みとし，片側25字×50行，段間は10mmを基準としてください．章間の行間は2行分 (ダブルスペース) とし，その中央に章名を10ptで記し，節間は行を空けないようにしてください．</p>
-<h2 id="字-体">字　体</h2>
-<p>題名，章・節名はゴシック体，本文は明朝体，英文題名，著者名はTimes New Roman, 本文中の英文はCenturyとします.参考文献<sup>1)</sup> は8ptで表記ください．</p>
-<ul>
-<li><p><em>強調</em></p></li>
-<li><p><strong>とても強調</strong></p></li>
-</ul>
-<h1 id="図-表">図　表</h1>
-<p>本文中の図表の表記には，下記Fig.1と Table 1のように，図表には通し番号をふり，図表番号はゴシック体，図表題はCenturyで書きます．キャプションは表の場合は上部に，図の場合は下部に記し，説明文は英文で表記してください．</p>
-<table>
-<caption>Table 1: Sample of table</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Table</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">2</td>
-</tr>
-</tbody>
-</table>
-<p>表 [Sample of table] を参照のこと。</p>
-<figure>
-<img src="md/pvis-party.jpg" alt="Figure 1: PacificVis PC meeting" /><figcaption aria-hidden="true">Figure 1: PacificVis PC meeting</figcaption>
-</figure>
-<h1 id="原稿提出">原稿提出</h1>
-<p>本テンプレートで作成した講演原稿 (PDF形式) と，調査票 (PDF形式，必ず押印したものをお願いします) をシンポジウムHPの案内に従って提出して下さい．</p>
-<h1 id="数式">数式</h1>
-<p>二点<span class="math inline">\(\mathbf p, \mathbf {p&#39;}\)</span>を結ぶふたつの制御点列<span class="math inline">\(\mathbb{e}\)</span>と<span class="math inline">\(\mathbb {e&#39;}\)</span>について。。。</p>
-<p><code>macros.tex</code> に定義したようなTeXマクロにも対応しています。</p>
-<p>二点<span class="math inline">\(\mathbf{p}, \mathbf{{p&#39;}}\)</span>を結ぶふたつの制御点列<span class="math inline">\(\mathbb{e}\)</span>と<span class="math inline">\(\mathbb{{e&#39;}}\)</span>について。。。</p>
-<p>以上で定義した三つの指標がいずれも一定値以上出会った場合に限り，束化圧があるものと評価する．このことは閾値 (<span class="math inline">\(\theta_a, \theta_l, \theta_p\)</span>) を用いて以下のように定式化される：</p>
-<p><span class="math inline">\(C_a(\mathbb{e}, \mathbb{{e&#39;}}), C_a(\mathbb{e}, \mathbb{{e&#39;}}), C_l(\mathbb{e}, \mathbb{{e&#39;}})\)</span></p>
-<p><span class="math display">\[
-C(\mathbb{e}, \mathbb{{e&#39;}}) =
+<!--
+
+# 序　論
+
+本原稿は，可視化情報シンポジウムの原稿テンプレートです．原稿執筆にはこのテンプレートをご使用ください．原稿サイズはA4版とし，ページ数は任意ですがファイルサイズは5MB以下としてください．ページ余白は，上25mm，左20mm，右20mm，下20mmとし，ヘッダーおよびフッダーは入れず，表題は3行目から始めてください．
+
+# 文字及び改行
+
+## 文字の大きさと改行
+
+使用言語は日本語または英語とします．和文原稿の場合，題目，著者名，所属を和文で書き，続けて題目，著者名の英文名を記入してください．英文原稿の場合，題目，著者名の英文名を記入してください．なお，[和題・英題は講演申込時と同じであることが必要です]{.underline}
+(異なる場合，プログラムや講演論文集の目次には講演申込時の題目が使用されます)．
+
+著者名は11pt，1行に36字以内で右寄せとし，これを越える場合は改行してください．本文は9ptの2段組みとし，片側25字×50行，段間は10mmを基準としてください．章間の行間は2行分
+(ダブルスペース)
+とし，その中央に章名を10ptで記し，節間は行を空けないようにしてください．
+
+## 字　体
+
+題名，章・節名はゴシック体，本文は明朝体，英文題名，著者名はTimes New
+Roman, 本文中の英文はCenturyとします.参考文献^1)^ は8ptで表記ください．
+
+- *強調*
+
+- **とても強調**
+
+# 図　表
+
+本文中の図表の表記には，下記Fig.1と Table
+1のように，図表には通し番号をふり，図表番号はゴシック体，図表題はCenturyで書きます．キャプションは表の場合は上部に，図の場合は下部に記し，説明文は英文で表記してください．
+
+  : Table 1: Sample of table
+
+  Table            | Table
+  :--------------- | :---------------
+  1                | 2
+
+表 [Sample of table] を参照のこと。
+
+![Figure 1: PacificVis PC meeting](md/pvis-party.jpg)
+
+# 原稿提出
+
+本テンプレートで作成した講演原稿 (PDF形式) と，調査票
+(PDF形式，必ず押印したものをお願いします)
+をシンポジウムHPの案内に従って提出して下さい．
+
+# 数式
+
+二点$\mathbf p, \mathbf {p'}$を結ぶふたつの制御点列$\mathbb{e}$と$\mathbb {e'}$について。。。
+
+`macros.tex` に定義したようなTeXマクロにも対応しています。
+
+二点$\v p, \v \pp$を結ぶふたつの制御点列$\E e$と$\E \ep$について。。。
+
+以上で定義した三つの指標がいずれも一定値以上出会った場合に限り，束化圧があるものと評価する．このことは閾値 ($\theta_a, \theta_l, \theta_p$) を用いて以下のように定式化される：
+
+$\Cae, \Cae, \Cle$
+
+$$
+C(\E e, \E \ep) =
 \begin {cases}
-C_a(\mathbb{e}, \mathbb{{e&#39;}})C_p(\mathbb{e}, \mathbb{{e&#39;}})C_l(\mathbb{e}, \mathbb{{e&#39;}})&amp; C_a(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_a \text { かつ } \\
-               &amp; C_p(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_p \text { かつ } \\
-               &amp; C_l(\mathbb{e}, \mathbb{{e&#39;}})&gt; \theta_l \\
-0              &amp; \text {その他の場合}
+\Cae \Cpe \Cle & \Cae > \theta_a \text { かつ } \\
+               & \Cpe > \theta_p \text { かつ } \\
+               & \Cle > \theta_l \\
+0              & \text {その他の場合}
 \end{cases}
-\]</span></p>
-<p><span class="math display">\[\begin {align}
-F_{\mathbf{e}_i} =
-  &amp; - \sum_{\mathbf{e}&#39;_i \neq \mathbf{e}_i} C(P^{-1}\mathbb{e}_i, P^{-1}\mathbb{e}&#39;_i)\frac{\mathbf{e}_i- \mathbf{e&#39;}_i}{(|\mathbf{e}_i-\mathbf{e}&#39;_i| + \alpha)^2} \\
-  &amp; -k\left(|{\mathbf{e}_i} - \mathbf{e}_{i-1}| - \ell_{\mathbb{e}}\right)\frac{\mathbf{e}_i - \mathbf{e}_{i-1}}{|\mathbf{e}_i - \mathbf{e}_{i-1}|} \\
-  &amp; -k\left(|\mathbf{e}_i - \mathbf{e}_{i+1}| - \ell_{\mathbb{e}}\right)\frac{\mathbf{e}_i - \mathbf{e}_{i+1}}{|\mathbf{e}_i - \mathbf{e}_{i+1}|}
+$$
+
+$$\begin {align}
+F_{\v e_i} =
+  & - \sum_{\v e'_i \neq \v e_i} C(P^{-1}\E e_i, P^{-1}\E e'_i)\frac{\v e_i- \v{e'}_i}{(|\v e_i-\v e'_i| + \alpha)^2} \\
+  & -k\left(|{\v e_i} - \v e_{i-1}| - \ell_{\E e}\right)\frac{\v e_i - \v e_{i-1}}{|\v e_i - \v e_{i-1}|} \\
+  & -k\left(|\v e_i - \v e_{i+1}| - \ell_{\E e}\right)\frac{\v e_i - \v e_{i+1}}{|\v e_i - \v e_{i+1}|}
 \end {align}
-\]</span></p>
-<p><span class="math display">\[\begin {align}
-C^{\text {High}}(\mathbb{x}, \mathbb{x&#39;}) &amp; = \\
-&amp; \begin {cases}
-C_a(\mathbb{x}, \mathbb{{e&#39;}})C_l(\mathbb{x}, \mathbb{{e&#39;}})C_p(\mathbb{x}, \mathbb{{e&#39;}})&amp; \text {※ 束化圧が高い場合} \\
-0 &amp; \text {その他の場合}
+$$
+
+$$\begin {align}
+C^{\text {High}}(\E x, \E {x'}) & = \\
+& \begin {cases}
+\Cax \Clx \Cpx & \text {※ 束化圧が高い場合} \\
+0 & \text {その他の場合}
 \end {cases} \\
 \text {ただし、※の条件は} \\
-    C_a(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_a \text { \&amp; }
-    C_l(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_l \text { \&amp; }
-    C_p(\mathbb{x}, \mathbb{{e&#39;}})&gt; \theta_p
-\end {align}\]</span></p>
-<h1 id="その他">その他</h1>
-<h2 id="文献の引用">文献の引用</h2>
-<p>この例題では、<code>library.bib</code> 文献データベースとし、文献引用のスタイルにシカゴスタイルを指定して文献リストと文献の引用をしている。<code>.csl</code>ファイルを別のものに指定すれば、他の引用形式にも対応できる。文献の引用方法は LaTeX の <code>\cite {...}</code> コマンドとは異なる。以下を参考にすること。</p>
-<p><span class="citation" data-cites="kashika-1997-visualization-technique kashika-1999-an-example-of-the-manuscript-for-vsj-journal">(Kashika 1997; Kashika and Hanko 1999)</span> は英語の文献で<span class="citation" data-cites="kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal">(可視化 and 情報 1998)</span>は日本語の文献である.</p>
+    \Cax > \theta_a \text { \& }
+    \Clx > \theta_l \text { \& }
+    \Cpx > \theta_p
+\end {align}$$
+
+# その他
+
+## 文献の引用
+
+この例題では、`library.bib` 文献データベースとし、文献引用のスタイルにシカゴスタイルを指定して文献リストと文献の引用をしている。`.csl`ファイルを別のものに指定すれば、他の引用形式にも対応できる。文献の引用方法は LaTeX の `\cite {...}` コマンドとは異なる。以下を参考にすること。
+
+
+[@kashika-1997-visualization-technique; @kashika-1999-an-example-of-the-manuscript-for-vsj-journal] は英語の文献で[@kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal]は日本語の文献である.
+-->
 <h1 id="はじめに">はじめに</h1>
 <h1 id="関連研究書きおわり">関連研究(書きおわり)</h1>
 <h2 id="小説からの情報抽出">小説からの情報抽出</h2>
@@ -162,13 +187,26 @@ C_a(\mathbb{x}, \mathbb{{e&#39;}})C_l(\mathbb{x}, \mathbb{{e&#39;}})C_p(\mathbb{
 <p>(N2) 小説に関する重要な情報を手軽に追加できること</p>
 <p>(N3) 情報を後から編集できること</p>
 <p>(N4) 小説の進行度に合わせて関係図を表示すること</p>
-<h2 id="可視化システム">可視化システム</h2>
-<p>4.1にて設定した要件をもとにシステムを設計した。この説では要件にそってシステムの説明を行う。</p>
-<h3 id="n1システムの上で読書ができること">(N1)システムの上で読書ができること</h3>
-<p>Kindle などの様々な電子書籍リーダーを参考にしながら、読書に必要な機能を以下のよう にまとめた。ただし、文章の読みやすさを向上することは研究の真の目的とは言えないので、 読書機能はなるべく簡潔に本当に必要な機能だけを条件として定義するようにした。システ ムの読書画面には、小説の選択機能、小説の内容の表示、しおりなどの機能が実装されてい る。(図 6.1) (A) のボタンを押すと新しく小説を青空文庫のサイトからダウンロードするか、既にダウ ンロードした小説から読む小説を選ぶのか選択することができる。小説をダウンロードする 際は、青空文庫の作品の図書カードページの作品のダウンロードからリンクをコピーし、貼 り付ける。貼り付けると、青空文庫のデータをダウンロードして、テキストデータから題名 や著者、本文のデータを抽出して表示しやすい形へ成形する。ダウンロードした作品を選ぶ 際は、既にダウンロードした作品の一覧から自分の読みたい作品を選択する。選択すると(B)(C) に表示される小説が選んだものへと変更される。(C) の表示される本文は最初に読む ときは最初のページ、2回目以降に読む場合は前回最後に読んだページが表示される。 (B) は読んでいる小説の題名と著者を表示している。この部分は読む小説を (A) で選択し直すまで変更されない。 (C) は小説の本文を表示している。元々の青空文庫で公開しているテキストデータには区 切りがないが、そのままシステム上に表示すると、ページをスクロールする必要があり読んだ部分の把握が難しくなるので、一定文字数で区切ってページとして管理している。ページをめくるなどの操作は後に説明する (D) で行う。 (D) は主にページの移動のためのツールが集中している。左から右へ順に機能を説明する。 まず左端のスライダーはつまみを動かして、見たいページを選択し、そのページに飛ぶこと ができる。次の二つのボタンはページをめくる操作を補助する。「◁」を押すと前のページへ、「▷」を押すと次のページへとめくることができる。次の「しおり」と書かれたボタンを 押すと現在表示しているページをしおりのリストに追加することができる。最後に (D) の 1番右に位置している「しおりに飛ぶ」ボタンを押すと、以前に追加したしおりのページを選択し、そのページに飛ぶことができる。</p>
-<h3 id="n2情報の追加方法">(N2)情報の追加方法</h3>
-<p>この節では読んだ小説内の情報をシステムに追加する方法を紹介する。このシステムで入力できる情報は<!---->で議論した通り、登場人物と関係性の二つである。システム上で入力された情報はシステムを閉じても、保存され続ける。情報追加は手動と自動の二通りで行えるので順番に紹介する。</p>
-<h4 class="unnumbered" id="自動抽出">自動抽出</h4>
+<h1 id="可視化システム一旦書きおわり">可視化システム（一旦書きおわり）</h1>
+<p>4.1にて設定した要件をもとにシステムを設計した。この節では要件に沿ってシステムの説明を行う。</p>
+<h2 id="n1システムの上で読書ができること">(N1)システムの上で読書ができること</h2>
+<p>様々な電子書籍リーダーを参考にし、読書に必要な機能を最低限実装した。読書画面には、小説の選択機能、本文の表示、しおりなどの機能が実装されている。<strong>小説を選択</strong>ボタンを押すと新しく小説を青空文庫のサイトからダウンロードするか、既にダウンロードした小説から選ぶのか選択することができる。小説をダウンロードする時は、青空文庫の作品の図書カードページのリンクを貼り付ける。貼り付けると、青空文庫のデータを表示しやすい形へ成形しシステム上に保存する。ダウンロード済みの作品を選ぶ際は、作品の一覧から自分の読みたい作品を選択する。選択された小説の本文はシステムの左下に表示され、 最初に読むときは１ページ目が、2回目以降に読む場合は前回最後に読んだページが表示される。元々の青空文庫で公開しているデータには区切りがないが、そのままシステム上に表示すると読んだ部分の把握が難しくなるので、一定文字数で区切りページとして管理している。 システムの上部には読書を進めるためのツールが位置している。左端のスライダーではつまみを動かして、見たいページを選択しそのページに飛ぶことができる。「◁」を押すと前のページへ、「▷」を押すと次のページへとめくることができる。次の「しおり」と書かれたボタンを押すと現在表示しているページをしおりづけできる。最後に「しおりに飛ぶ」ボタンを押すと、以前に追加したしおりのページを選択しそのページに飛ぶことができる。</p>
+<h2 id="n2情報の追加方法">(N2)情報の追加方法</h2>
+<p>この節では読んだ小説内の情報をシステムに追加する方法を紹介する。このシステムで入力できる情報はで議論した通り、登場人物と関係性の二つである。システム上で入力された情報はシステムを閉じても保存され続ける。情報追加は手動と自動の二通りで行えるので順番に紹介する。</p>
+<h3 id="自動抽出">自動抽出</h3>
+<p>自動抽出は<strong>自動情報抽出</strong>ボタンを押すことで、小説内の登場人物と人間関係の候補を自動で全て抽出することができる。抽出された情報は自動で保存され、その情報はシステム内で確認することができる。</p>
+<h3 id="手動抽出">手動抽出</h3>
+<p>登場人物の追加方法は主に二つである。一つ目の方法は完全に手作業で追加する方法である。1 番上の<strong>情報追加</strong>ボタンを押すと、人物を追加するか、関係を追加するか選ぶことができる。人物の追加を選ぶと、情報入力画面が出る。テキストボックスに追加したい登場人物を入力し、<strong>以上の人物を追加</strong>ボタンを押すと、入力した人物が登場人物のリストに追加される。二つ目の方法は計算機を用いて登場人物の候補を提案し、その中から人物を選んでもらう方法である。 <strong>登場人物の候補を抽出</strong>ボタンを押すと、現在表示している文章内の登場人物らしい単語を抽出して表示する。候補のうちチェックを付けたものは文中での色が変化するので、その単語が本当に登場人物を指すのか確認できる。最後に登場人物として追加したいものだけチェックをつけて、<strong>追加</strong>ボタンを押すとまとめて登場人物に追加される。</p>
+<p>次に関係性の追加方法について紹介する。システムの上部の<strong>情報追加</strong>ボタンを押し、<strong>関係性追加</strong>を選択すると関係性の入力フォームが出現する。そこでその関係が<strong>誰から</strong>、<strong>誰への</strong>、<strong>どんな関係</strong>で<strong>どのくらい好意的なのか</strong>を入力する。好感度は５段階評価で高い値ほど好感度が高いことを示す。以上の情報を入力し終わったら<strong>追加</strong>ボタンを押すことで入力した関係性はシステムに保存される。</p>
+<h2 id="n3-情報を後から編集できること">(N3) 情報を後から編集できること</h2>
+<p>この節では既に追加した情報を修正する方法について紹介する。情報編集は<strong>情報編集画面</strong>を開くことで行うことができる。情報編集画面は<strong>登場人物編集表</strong>と<strong>登場人物の出現度のヒートマップ</strong>と<strong>関係編集画面</strong>の3つから成り立つ。登場人物の情報を編集する場合は表において変更したい部分をダブルクリックし直接書き換えることができる。しかし書き換えただけではシステムに保存された情報は変わらないので右にある<strong>変更を保存</strong>ボタンを押す必要がある。加えて登場人物の左横にチェックをつけると登場人物が選択され、選択された人物はヒートマップ上に表示される。右の<strong>消去</strong>ボタンを押すとチェック付きの人物をまとめて消去することができる。これは関係編集画面も同様に操作することができる。 ヒートマップにおいて縦軸は登場人物、横軸はページ数を表している。各セルはそのページにおいて登場人物の単語が何回出てきたかによって色分けされており、濃い色であるほど登場回数が多い。カーソルを各セル上におくと、そのセルが「誰のどのページでの出現回数」を表していて、正確な出現回数を確認することができる。加えて各セルをクリックするとそのセルの表すページへ飛ぶことができる。</p>
+<h2 id="n4-小説の進行度に合わせて関係図を表示すること">(N4) 小説の進行度に合わせて関係図を表示すること</h2>
+<p>最後に関係図を表示する機能について紹介する。本研究では登場人物と関係を表すために<strong>人物相関図</strong>と<strong>人物相関表</strong>という２種類の表示を行う。</p>
+<h3 id="人物相関図">人物相関図</h3>
+<p>人物相関図はノードリンクである。人物相関図は上の<strong>可視化を選択</strong>から<strong>人物相関図</strong>を選択することで表示できる 。人物相関図には現在のページまでに出てきた登場人物と関係の情報が表示される。各ノードは登場人物を表し、各リンクは1番直近の関係性を表している。各ノードの大きさはその人物の持つ関係性の多さを表し、大きいほど小説において重要な人物である。ノード上でクリックをするとそのノードに繋がったリンクのみが強調され、関係する人物を一眼で確認できる。加えて各リンクはその関係の持つ好感度の値によって色付けされている。各リンクの上をホバーすると関係についての正確な情報を得ることができる。人物相関図は登場人物が少ない場合に一目で重要な人物や関係性を確認することができ、多くのユーザーに馴染み深い表示手法を採用しているため内容を理解しやすいという利点がある。</p>
+<h3 id="人物相関表">人物相関表</h3>
+<p>次に人物相関表の紹介を行う。人物相関表はシステムの上部の<strong>可視化を選択</strong>から<strong>人物相関表</strong>を選ぶことで表示できる。人物相関表では現在のページまでに出てきた人物の名前が縦軸と横軸に並ぶ。各セルは縦軸の人物から横軸の人物への直近の関係を表しており、その関係の好感度によって色分けされている。またセル上をホバーすることでその関係の詳細を確認でき、クリックすることで過去の関係の一覧表を見ることができる。人物相関表の隣には表示する範囲を制限するためのボタンが位置する。これらのボタンでは、<strong>小説のどのページの関係を表示するのか</strong>、<strong>どの人物に注目した人物相関表を表示するのか</strong>、<strong>人物相関表にどの人物を表示するのか</strong>の３つを調整することができる。 人物相関表の機能は以上の通りである。人物相関表の長所は登場人物の多い長い小説に対しても、機能を使えばある程度対応することができることである。 このように人物相関図と人物相関表では長所が異なっているため、人物の数や知りたい情報によってビューを使い分けることを想定している。</p>
+<p>以上のようにまた各システム要件に必要な機能を実装することができた。</p>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-filipovcircle" class="csl-entry" role="doc-biblioentry">
 Filipov, Velitchko, Davide Ceneda, TU CVAST, Michael Koller, Alessio Arleo, and Silvia Miksch. n.d. <span>“The Circle of Thrones: Conveying the Story of Game of Thrones Using Radial Infographics.”</span>
@@ -176,20 +214,11 @@ Filipov, Velitchko, Davide Ceneda, TU CVAST, Michael Koller, Alessio Arleo, and 
 <div id="ref-8781589" class="csl-entry" role="doc-biblioentry">
 John, Markus, Martin Baumann, David Schuetz, Steffen Koch, and Thomas Ertl. 2019. <span>“A Visual Approach for the Comparative Analysis of Character Networks in Narrative Texts.”</span> In <em>2019 IEEE Pacific Visualization Symposium (PacificVis)</em>, 247–56. <a href="https://doi.org/10.1109/PacificVis.2019.00037">https://doi.org/10.1109/PacificVis.2019.00037</a>.
 </div>
-<div id="ref-kashika-1997-visualization-technique" class="csl-entry" role="doc-biblioentry">
-Kashika, T. 1997. <span>“Visualization Technique.”</span> <em>VSJ Press</em>, 1111–25.
-</div>
-<div id="ref-kashika-1999-an-example-of-the-manuscript-for-vsj-journal" class="csl-entry" role="doc-biblioentry">
-Kashika, T., and J. Hanko. 1999. <span>“An Example of the Manuscript for <span>VSJ</span> Journal.”</span> <em><span>VSJ</span> Journal</em> 10 (5): 10–15.
-</div>
 <div id="ref-tanahashi2015efficient" class="csl-entry" role="doc-biblioentry">
 Tanahashi, Yuzuru, Chien-Hsin Hsueh, and Kwan-Liu Ma. 2015. <span>“An Efficient Framework for Generating Storyline Visualizations from Streaming Data.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 21 (6): 730–42.
 </div>
 <div id="ref-wu2020interactive" class="csl-entry" role="doc-biblioentry">
 Wu, Tsung Heng, Ye Zhao, and Md Amiruzzaman. 2020. <span>“Interactive Visualization of AI-Based Speech Recognition Texts.”</span> <em>EuroVA</em>.
-</div>
-<div id="ref-kashika-1999-a-japanese-example-of-the-manuscript-for-vsj-journal" class="csl-entry" role="doc-biblioentry">
-可視化太郎, and 情報花子. 1998. <span>“可視化情報学会における論文の書き方.”</span> <em>可視化情報</em> 100 (1000): 11–12.
 </div>
 <div id="ref-米田崇明2012述語情報を利用した小説の登場人物の抽出" class="csl-entry" role="doc-biblioentry">
 米田崇明, 篠崎隆宏, 堀内靖雄, and 黒岩眞吾. 2012. <span>“述語情報を利用した小説の登場人物の抽出.”</span> <em>言語処理学会第 18 回年次大会発表論文集</em> 18: 855–58.
