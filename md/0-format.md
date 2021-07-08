@@ -6,23 +6,28 @@ the Visualization Symposium Japan (Times New Roman 16pt)
 Taro KASHIKA and Hanako JOHO
 
 ##### ABSTRACT {#abstract .af1}
+<!--
 
 This template is a guide to prepare manuscript for Visualization
 Symposium Japan. Here, please write the abstract serving as an index and
 as a summary of the present paper. It should be as long as approximately
 150 words. \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+-->
 
 Books are reliable and excellent sources of information. However, reading requires long time constraints and the need to supplement the information from the text. Therefore, even if you have the desire and need to read, you may give up. For this reason, researches have been conducted to automatically extract information from novels and to assist the reader by representing the content of the story in a single page. However, there is a risk of spoiling.
 In this study, we propose a method to support reading by presenting a character correlation. In order to reduce the risk of spoilers, we propose a character correlation chart that changes as the reading progresses. We used two methods to add information: automatic extraction using natural language processing techniques and manual addition. In addition, by sharing the input information with others, we were able to reduce the time and effort required to input information. In order to verify the effectiveness of the proposed method, we constructed a reading support system using Aozora Bunko data. Finally, we discussed the degree of achievement and issues in comparison with the objectives.
 
+<!--
 書籍は信頼性が高く優秀な情報源である。しかし読書は長い拘束時間を必要とし、文章から情報を補完する必要がある。そのため意欲や必要性があっても中断してしまうことがある。 そのため小説から情報を自動抽出したり、話の内容を一枚で表して補助を行う研究がなされてきた。しかし一枚で表すことによるネタバレの危険性が存在した。
 本研究では人物相関図を提示することで読書をサポートする。提案手法ではネタバレの危険性を軽減するために、読書の進度に合わせて変化する人物相関図を提案する。自然言語処理の技術を用いた自動抽出と手動の追加のふた通りで情報の追加を行った。加えて他者と入力情報を共有することで情報入力の手間の削減、読書体験 の共有を実現した。提案手法の有効性を検証するために、青空文庫のデータを用いた読書支援システムを構築した。最後に目的と照らし合わせ達成度と課題について議論を行った。
-
 \*\*\*\*\*\*\*\*《150語程度の英文ABSTRACT及び5語以下のKeywordsを記入してください．文字の大きさは10pt，字体はCentury，行間は１行分
 (シングルスペース) です．》
+-->
 
 Keywords: Visualization, Digital image processing,
+<!--
 \*\*\<5語以下\>\*\*, \*\*\*\*\*, \*\*\*\*\*
+-->
 
 <!--
 
