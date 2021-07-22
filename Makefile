@@ -5,7 +5,7 @@ MACRO=macros.sty
 MARKDOWN=md/0-format.md md/1-introduction.md md/2-relatedwork.md md/3-syuhou.md md/4-system.md md/5-evaluation.md md/6_conclusion.md md/b-bibliography.md 
 INPUTS=$(HEADER) $(MACRO) $(MARKDOWN)
 
-DOCX=vsj21-ota.docx
+DOCX=vsj21-ota_copy.docx
 HTML=vsj21-ota.html
 
 define pandoc
